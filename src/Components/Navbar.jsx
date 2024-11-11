@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,7 @@ const Navbar = ({GoogleSignOut, isAuth}) => {
        {
         !isAuth ? ( <Link to='/login'>Login</Link> ) : ( 
         <> 
-        <Link to='#'>Create Post</ Link>
+        <Link to='/createpost'>Create Post</ Link>
         <button className="login-btn" onClick={GoogleSignOut}>Sign Out</button>
         </> )
        }
